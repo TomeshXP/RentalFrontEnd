@@ -116,6 +116,26 @@ export class UsersService {
         }
         return this.httpServices.getService(`/api/GetRequest/${PropertyId}`,false,header);
       }
+
+      GetMyProfile(RentarId:any)
+      {
+        let header={
+          headers:new HttpHeaders({
+            'Content-type':'application/json'
+          })
+        }
+        return this.httpServices.getService(`/api/GetMyProfile/${RentarId}`,false,header);
+      }
+
+      editProfile(RentarId:any,reqData:any)
+      {
+        let header={
+          headers:new HttpHeaders({
+            'Content-type':'application/json'
+          })
+        }
+       return this.httpServices.UpdateService(`/api/MyProfileEdit/${RentarId}`,reqData,false,header);
+      }
     }
   
 

@@ -27,7 +27,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SendrequestComponent } from './sendrequest/sendrequest.component';
 import { ShowRequestComponent } from './show-request/show-request.component';
-import { MyprofileComponent } from './myprofile/myprofile.component'
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { MyprofileComponent } from './myprofile/myprofile.component'
     DashbordnavbarComponent,
     SendrequestComponent,
     ShowRequestComponent,
-    MyprofileComponent
+    MyprofileComponent,
+    EditProfileComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

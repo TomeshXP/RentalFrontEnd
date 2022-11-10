@@ -34,10 +34,10 @@
 
               
               <div class="form-group">
-                <input type="file" class="form-control textt" formControlName="Image"  required>
+                <input type="file"  (change)="onFileChanged($event)" class="form-control textt" formControlName="Image"  required>
               </div>
 
-            <button type="submit" class="btn textt" >Submit</button>
+            <button type="submit" class="btn btn-success textt" >Submit</button>
           </form>
     </div>
     <div class="col-md-4"></div>

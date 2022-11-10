@@ -1,1 +1,13 @@
-<p>myprofile works!</p>
+
+    <div class="card">
+        <div class="card-body mypro">
+            <div class=""><img src="../../assets/PropertyImagee/userimage.png" class="profileimg"></div>
+            <!-- <div class=""><img src={{MyProfileArray.Image}}></div> -->
+            <div class="">Name:- {{MyProfileArray.UserName}}</div>
+            <div class="">Email:- {{MyProfileArray.Email}}</div>
+            <div class="">Mobile:- {{MyProfileArray.Number}}</div>
+            <div class="">Address:- {{MyProfileArray.Address}}</div>
+            <button class="btn btn-success pEditb" (click)="openDialog()">Edit</button>
+        </div>
+    </div>
+

@@ -14,6 +14,7 @@ export class RegisterComponent implements OnInit {
 
   register!: FormGroup;
   submited = false;
+  event:any;
   constructor(private formBuilder:FormBuilder,private userservice:UsersService,private snackbar:MatSnackBar,private route:Router) { }
 
   UserPattern = "^[A-Z][A-Za-Z]{2,20}$";
@@ -65,5 +66,20 @@ export class RegisterComponent implements OnInit {
        })
      }
 
+     file:any;
+     imageShow:any;
+   
+
+
+     onFileChanged(event:any)
+     {
+      this.file = event.target.files[0]
+      var reader = new FileReader();
+      reader.readAsDataURL(event.target.files[0]);
+      reader.onload = (event) => {
+       this.imageShow = (<FileReader>event.target).result;
+       console.log("My Image",this.imageShow);
+     }
+}
 }
 

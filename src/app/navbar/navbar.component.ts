@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { MyprofileComponent } from '../myprofile/myprofile.component';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor(private route:Router,private dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +20,14 @@ export class NavbarComponent implements OnInit {
     localStorage.removeItem("RentarId");
     localStorage.removeItem("UserName");
     this.route.navigateByUrl("/Login");
+  }
+
+  openDialog(): void {
+    this.dialog.open(MyprofileComponent, {
+      width: '24%',    
+      height:'52%'
+    });
+    
   }
 
 }

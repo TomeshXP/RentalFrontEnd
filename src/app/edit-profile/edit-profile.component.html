@@ -1,0 +1,11 @@
+<div class="">
+    <h2 class="text-center">Edit Profile</h2>
+    <form [formGroup]="EditProfile">
+        <div class="form-group"><input type="text" required class="form-control"  placeholder="Enter Name" formControlName="UserName"/></div>
+        <div class="form-group"><input type="text" required class="form-control"  placeholder="Enter Email" formControlName="Email"/></div>
+        <div class="form-group"><input type="text" required class="form-control"  placeholder="Enter Number" formControlName="Number"/></div>
+        <div class="form-group"><input type="text" required class="form-control"  placeholder="Enter Address" formControlName="Address"/></div>
+        <div class="form-group"><input type="file"  class="form-control"  formControlName="Image"/></div>
+        <button (click)="OnSubmit()" class="btn btn-success editbtn">Update</button>
+    </form>
+</div>

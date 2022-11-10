@@ -36,8 +36,6 @@ export class EditPropertyComponent implements OnInit {
     })
   }
 
-  
-
   GetPropertyById(PropertyId:any)
   {
     this.user.getpropertyById(PropertyId).subscribe((Response:any)=>
