@@ -1,0 +1,30 @@
+<app-dashbordnavbar></app-dashbordnavbar>
+<div class="container">
+    <div *ngIf="getRequestArray?.length!=0 || getRequestArray!=null">
+    <section class="mt-5" style="margin-top: 20px;">
+        <div class="row" #thenBlock>
+
+            <div class="col-md-6 " *ngFor="let property of getRequestArray" style="margin-top: 30px;">
+                <div class="card">
+                    <div class="card-body mb-2">
+                        <div class=""><img class="buyerimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5W-3fSGOIcgkl-Z0fFhkIQirjrBHZ2SBct4ZuJ5k9rqe6iWClEGIHgLee0zoCvlhs8KE&usqp=CAU"></div>
+                        <div class=""> {{property.BuyerdImag}}</div>
+                        <div class="">BuyerName:- {{property.BuyerName}}</div>
+                        <div class="">BuyerEmail:- {{property.BuyerEmail}}</div>
+                        <div class="">BuyerMobile:- {{property.BuyerMobile}}</div>
+                        <div class="">BuyerAddress:- {{property.Address}}</div>
+                        <div class="">RentAmount:- {{property.RentAmount}} /-</div>
+                        <div class="">SecurityDeposit:- {{property.SecurityDeposit}} /-</div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        </div>
+   
+
+        <div *ngIf="getRequestArray?.length==0 || getRequestArray==null">
+            <h1 class="text-center" >Request Not Found</h1>
+        </div>
+        </div>

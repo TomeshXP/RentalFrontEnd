@@ -1,0 +1,63 @@
+
+.body-section{
+    text-align: center;
+    margin-top:220px;
+  
+    
+}
+
+.bodytext{
+    font-weight: bold;
+    font-size: 23px;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body-btn{
+    background-color: blueviolet;
+    height: 40px;
+    width:100px;
+    border-radius:7px;
+    border:0px;
+    color:white;
+    font-weight: bold;
+    font-size:13px;
+    margin-top: 20px;
+}
+.body-display{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-end;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.row{
+    margin-right: 0px;
+}
+.nanbody-section{
+    background-image:url("https://wp-tid.zillowstatic.com/25/Traditional-style-suburban-home-shutterstock_398991412-823eff-1024x546.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 550px;
+    height: 525px;
+    margin-top: -20px;
+}
+
+.bodyname{
+    background-color: blueviolet;
+    height: 55px;
+    width:300px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px grey;
+    margin:auto;
+    margin-top:-6px;
+}
+
+
+//    body{
+//     background-color: green;
+//    // background-image:url("https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg");
+//    }

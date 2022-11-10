@@ -1,0 +1,44 @@
+<div style="width:100%">
+    <app-dashbordnavbar></app-dashbordnavbar>
+
+
+                <div class="body-section">
+                <button class="body-btn" routerLink="/Addproperties">ADD NEW PROPERTIES</button>
+                <div class="body-display">
+                  <h4 class="proheading">{{MyPropertyArray.length}} Properties Added</h4>
+                  <p style="  color:rgb(42, 166, 249);">Add Properties Here</p>
+
+                  <h1 ><a>List Of Your Properties</a></h1>
+                </div>
+                </div>
+
+
+            </div>
+
+<!-- Get Property Parts -->
+<div class="container">
+    <section class=" mt-5" style="margin-top: 20px;">
+        <div class="row" >
+            
+                    <div class="col-md-6 " *ngFor="let property of MyPropertyArray" style="margin-top: 30px;">
+                        <div class="card">
+                            <div class="card-body mb-2">
+                        <!-- <div class=""><img src={{property.PropertyImage}}></div> -->
+                        <div class="ptext">ProperyName:- {{property.PropertyName}}</div>
+                        <div class="">Location:- {{property.Location}}</div>
+                        <div class="">City:- {{property.City}}</div>
+                        <div clsss="">SqureFeet:- {{property.SqureFeet}}</div>
+                        <div clsss="">RentalCost:- {{property.RentalCost}} /- </div>
+                        <div clsss="">Type:- {{property.Type}}</div>
+                        <div class="">LandLordName:- {{property.LandLordName}}</div>
+                        <button class="btn btn-primary btn-card"  routerLink="/EditProperty/{{property.ProperyId}}">Edit</button>
+                        <button class="btn btn-danger  btn-card" (click)="DeleteProp(property.ProperyId)" style="margin-left: 20px;">Delete</button>
+                        <button class="btn btn-info  btn-card"  style="margin-left: 20px;" routerLink="/ShowRequest/{{property.ProperyId}}" >Show Request</button>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+  
+
+    </section>
+</div>

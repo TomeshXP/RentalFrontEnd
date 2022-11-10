@@ -1,0 +1,29 @@
+<app-dashbordnavbar></app-dashbordnavbar>
+
+<div class="container">
+    <section class=" mt-5" style="margin-top: 20px;">
+        <div class="row" >
+            
+               
+                    <div class="col-md-6 " *ngFor="let property of PropertyArray" style="margin-top: 30px;">
+                        <div class="card">
+                            <div class="card-body mb-2">
+                        <!-- <div class=""><img src={{property.PropertyImage}}></div> -->
+                        <div class="ptext">ProperyName:- {{property.PropertyName}}</div>
+                        <div class="">Location:- {{property.Location}}</div>
+                        <div class="">City:- {{property.City}}</div>
+                        <div clsss="">SqureFeet:- {{property.SqureFeet}}</div>
+                        <div clsss="">RentalCost:- {{property.RentalCost}} /- </div>
+                        <div clsss="">Type:- {{property.Type}}</div>
+                        <div class="">LandLordName:- {{property.LandLordName}}</div>
+                        <button mat-flat-button   matTooltip="Send Request"  (click)="openDialog(property)" color="primary" >Request</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+  
+
+    </section>
+</div>
+
+

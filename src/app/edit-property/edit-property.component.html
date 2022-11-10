@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="row headerform">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4 formdecor">
+      <h2 class="textHeading">Edit Properties</h2>
+      <form [formGroup]="EditProperty" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+          <input type="text" class="form-control textt"  formControlName="PropertyName"  placeholder="Property Name" required />
+        </div>
+
+
+        <div class="form-group">
+          <input type="text" class="form-control textt" formControlName="SqureFeet" 
+            placeholder="Square Feet" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control textt"  formControlName="RentalCost" 
+            placeholder="Rental Cost" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control textt"  formControlName="City" 
+            placeholder="City" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control textt"  formControlName="Location" 
+            placeholder="Location" required>
+        </div>
+
+        <div class="form-group radioflex">
+          <div>Type</div>
+          <div><input type="radio" [checked]="GetProperty.Type=='1BHK'" name="Type" value="1BHK"
+              formControlName="Type">1BHK</div>
+          <div><input type="radio" [checked]="GetProperty.Type=='2BHK'" name="Type" value="2BHK"
+              formControlName="Type">2BHK</div>
+          <div><input type="radio" [checked]="GetProperty.Type=='3BHK'" name="Type" value="3BHK"
+              formControlName="Type">3BHK</div>
+        </div>
+
+        <div class="form-group">
+          <input type="text"  class="form-control textt" formControlName="LandLordName" 
+           placeholder="LandLord Name" required>
+        </div>
+
+
+        <div class="form-group">
+          <input type="file" class="form-control textt" formControlName="PropertyImage"  required>
+        </div>
+
+        <button type="submit" class="btn textt">Update </button>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>

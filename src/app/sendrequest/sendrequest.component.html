@@ -1,0 +1,23 @@
+<div class="mainheading">
+<h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Agreement</h1>
+<hr>
+
+    <div>
+ <div class="heading">LandLord Name:- {{LandLordName}}</div>
+ <p>I xxxxx agree to rent to rental unit</p>
+</div>
+<div class="">
+    <div class="heading">Rent Amount</div>
+    <p >The rent to paid by the landlord throughtout the term of the agreement is Rs 150000</p>
+</div>
+<div class="">
+    <div class="heading">Security Deposit</div>
+    <div>Rs. 5000</div>
+    <p>The Security deposit willbe used for the purpose of repairing damage for which rent is responsible.</p>
+</div>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button  color=""mat-dialog-close>Cancel</button>
+        <button mat-raised-button  color="primary" [mat-dialog-close]="true" (click)="Agree()" cdkFocusInitial>Agree</button>
+      </mat-dialog-actions>
+</div>
